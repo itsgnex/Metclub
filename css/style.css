@@ -551,6 +551,7 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
   overflow: hidden;
   aspect-ratio: 3/4;
   margin-bottom: 1rem;
+  background: var(--cream);
 }
 
 .team-photo-wrap img {
