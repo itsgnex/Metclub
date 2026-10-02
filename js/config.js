@@ -35,7 +35,7 @@ const SITE_CONFIG = {
       name: "Shubham Verma",
       role: "Marketing Lead",
       email: "Shubham.Verma@mytwu.ca",
-      image: "assets/images/shubham.jpeg",
+      image: "assets/images/shubham.jpeg?v=2",
       bio: "Shubham orchestrates our outreach and marketing efforts. His dedication ensures that every event reaches our audience and is an unforgettable experience for all members.",
       skills: [{ name: "Event Planning", level: 92 }, { name: "Community", level: 90 }, { name: "Marketing", level: 85 }, { name: "Outreach", level: 80 }],
       currentProject: { title: "Club Promotion", desc: "Designing posters and marketing campaigns" },
