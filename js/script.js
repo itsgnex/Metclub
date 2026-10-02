@@ -4,6 +4,24 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', async () => {
+  const heroVideo = document.querySelector('.hero-video-bg');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+    heroVideo.playsInline = true;
+    heroVideo.load();
+
+    const startHeroVideo = () => {
+      const playAttempt = heroVideo.play();
+      if (playAttempt && typeof playAttempt.catch === 'function') {
+        playAttempt.catch(() => {});
+      }
+    };
+
+    startHeroVideo();
+    window.addEventListener('pointerdown', startHeroVideo, { once: true });
+    window.addEventListener('touchstart', startHeroVideo, { once: true, passive: true });
+  }
 
   // ════════════════════════════════════════════════════════════════
   // STEP 0: LOAD SHARED COMPONENTS (Navbar & Footer)
