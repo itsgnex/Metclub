@@ -8,6 +8,7 @@ const SITE_CONFIG = {
   instagramLink: "https://www.instagram.com/twumet?stkn=Z2NmN2wwNnE2MXQ1",
   linkedinLink: "#",
   githubLink: "#",
+  joinFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSdXDCR1ezdg7u17N6uvGnT00_TwUoH--gCFl9FO8PW9S9tohw/viewform",
 
   // ──────────────────────────────────────────────
   // TEAM MEMBERS (Index Page)

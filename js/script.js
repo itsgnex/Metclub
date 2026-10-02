@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.querySelectorAll('.dynamic-github-link').forEach(el => {
       if (SITE_CONFIG.githubLink && SITE_CONFIG.githubLink !== "#") el.href = SITE_CONFIG.githubLink.startsWith('http') ? SITE_CONFIG.githubLink : `https://${SITE_CONFIG.githubLink}`;
     });
+    document.querySelectorAll('.dynamic-join-link').forEach(el => {
+      if (SITE_CONFIG.joinFormLink && SITE_CONFIG.joinFormLink !== "#") {
+        el.href = SITE_CONFIG.joinFormLink;
+        el.target = '_blank';
+        el.rel = 'noopener noreferrer';
+      }
+    });
   } catch (e) {
     // Components failed to load (e.g. opened as a local file:// without a server).
     // The page will still work - nav/footer just won't appear. Use a local server.
