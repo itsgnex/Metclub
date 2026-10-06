@@ -120,17 +120,41 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
   // ──── Smooth scroll ────────────────────────────────
+  const scrollToSection = (id) => {
+    const target = document.getElementById(id);
+    if (!target) return false;
+    const offset = (navbar ? navbar.offsetHeight : 0) + 20;
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + window.scrollY - offset,
+      behavior: 'smooth'
+    });
+    return true;
+  };
+
+  const isHomePage = /\/(?:index)?(?:\.html)?\/?$/.test(window.location.pathname);
+
+  document.querySelectorAll('a[data-scroll-target]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const section = this.dataset.scrollTarget;
+      if (!section) return;
+      sessionStorage.setItem('met-scroll-target', section);
+      if (isHomePage && scrollToSection(section)) {
+        e.preventDefault();
+        sessionStorage.removeItem('met-scroll-target');
+      }
+    });
+  });
+
+  const pendingSection = sessionStorage.getItem('met-scroll-target');
+  if (pendingSection && isHomePage) {
+    sessionStorage.removeItem('met-scroll-target');
+    requestAnimationFrame(() => scrollToSection(pendingSection));
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        const offset = (navbar ? navbar.offsetHeight : 0) + 20;
-        window.scrollTo({
-          top: target.getBoundingClientRect().top + window.scrollY - offset,
-          behavior: 'smooth'
-        });
-      }
+      scrollToSection(this.getAttribute('href').slice(1));
     });
   });
 
@@ -393,7 +417,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--black); margin-bottom: 1.5rem; line-height: 1.2;">Events are on the way.</h2>
             <p style="color: var(--text-muted); font-size: 1rem; max-width: 560px; margin: 0 auto 1rem; line-height: 1.8;">We're currently planning our next round of workshops, hackathons, and collaborative sessions. Our schedule fills up fast so visit this page often. You don't want to miss out.</p>
             <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 480px; margin: 0 auto 3rem; line-height: 1.7;">Have an idea for an event or want to help organise one? We'd love to hear from you.</p>
-            <a href="index.html#contact" style="display: inline-block; padding: 1rem 3rem; background: var(--green); color: var(--white); border-radius: var(--r-pill); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: var(--t-fast);">Get In Touch</a>
+            <a href="index.html" data-scroll-target="contact" style="display: inline-block; padding: 1rem 3rem; background: var(--green); color: var(--white); border-radius: var(--r-pill); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: var(--t-fast);">Get In Touch</a>
           </div>`;
       } else {
         eventsPageContainer.innerHTML = SITE_CONFIG.events.map((ev, index) => `
