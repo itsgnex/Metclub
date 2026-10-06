@@ -1,9 +1,9 @@
 /* ============================================================
    MET CLUB — Final Design System
-   Cream · Forest Green · Big Serif · Lots of Air
+   Paper · Blueprint Navy · Editorial Serif · Lots of Air
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ── Tokens ────────────────────────────────────────────────── */
 /* 
@@ -13,24 +13,24 @@
 */
 :root {
   /* COLORS */
-  --cream: #f5f1eb;         /* Main light background color */
-  --cream-dark: #ece7df;    /* Slightly darker cream for subtle contrasts */
+  --cream: #fbf8ef;         /* Main light background color */
+  --cream-dark: #efe8d8;    /* Slightly darker cream for subtle contrasts */
   --white: #ffffff;         /* Pure white for cards and form fields */
-  --green: #1b3d2f;         /* Deep forest green for main headers and dark sections */
-  --green-light: #2a5c45;   /* Hover state for buttons */
-  --green-tag: #1b6b42;     /* Bright green for text tags */
-  --green-tag-bg: #dceee4;  /* Light green background for text tags */
-  --black: #111111;         /* Off-black for deepest contrast */
-  --text: #2a2a2a;          /* Main paragraph text color (softer than black) */
-  --text-muted: #777777;    /* Used for subtitles and meta text */
+  --green: #071a33;         /* Blueprint navy for main headers and dark sections */
+  --green-light: #143e7a;   /* Hover state for buttons */
+  --green-tag: #0f57b7;     /* Bright blue for text tags */
+  --green-tag-bg: #dbe9fb;  /* Light blue background for text tags */
+  --black: #020b1a;         /* Deep ink for strongest contrast */
+  --text: #233044;          /* Main paragraph text color */
+  --text-muted: #687286;    /* Used for subtitles and meta text */
   --text-light: #aaaaaa;    /* Used for placeholder text or footer text */
-  --border: #ddd5ca;        /* Color used for all section dividers and input borders */
-  --gold: #C09B5A;          /* Accent color used for highlighting special elements */
+  --border: #d9d3c7;        /* Color used for all section dividers and input borders */
+  --gold: #0d5fc4;          /* Accent color used for highlighting special elements */
 
   /* TYPOGRAPHY */
   /* If you want to swap out the fonts, update the Google Fonts import above and change these */
-  --font-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
   /* ANIMATION TIMINGS */
@@ -117,10 +117,16 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
 
 .nav-brand {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 14px rgba(2, 11, 26, 0.75);
+}
+
+.nav.scrolled .nav-brand {
   color: var(--gold);
-  letter-spacing: 0.02em;
+  text-shadow: none;
 }
 
 .nav-right {
@@ -252,10 +258,10 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
 }
 
 .hero-ocean-title {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: clamp(6rem, 15vw, 14rem);
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
   color: var(--white);
   line-height: 1;
   text-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -577,6 +583,7 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
   position: absolute;
   bottom: 0.75rem; left: 0.75rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.35rem;
   opacity: 0;
   transform: translateY(8px);
@@ -1195,8 +1202,8 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
 }
 
 .main-header { margin-bottom: 1.5rem; }
-.main-name { font-size: 3rem; font-weight: 700; font-family: var(--font-sans); color: var(--black); line-height: 1.1; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
-.main-role { font-size: 1.1rem; font-weight: 700; font-family: var(--font-sans); color: var(--green); letter-spacing: 0.05em; }
+.main-name { font-size: 3rem; font-weight: 900; font-family: var(--font-serif); color: var(--black); line-height: 1.1; margin-bottom: 0.5rem; letter-spacing: 0.04em; }
+.main-role { font-size: 1.1rem; font-weight: 700; font-family: var(--font-sans); color: var(--green); letter-spacing: 0.08em; }
 .main-bio { font-size: 1.1rem; color: var(--text); line-height: 1.6; margin-bottom: 2rem; }
 
 

@@ -1,9 +1,10 @@
 const SITE_CONFIG = {
   // Contact email for the form submissions
-  contactEmail: "1873reddy1873@gmail.com",
+  contactEmail: "ratnakoushik.appasan@mytwu.ca",
+  ccEmail: "Tanya.Aggarwal@mytwu.ca",
 
   // General contact information displayed on the site
-  displayEmail: "ratnakoushikappasani@gmail.com",
+  displayEmail: "ratnakoushik.appasan@mytwu.ca",
   discordLink: "https://discord.gg/metclub",
   instagramLink: "https://www.instagram.com/twumet?stkn=Z2NmN2wwNnE2MXQ1",
   linkedinLink: "#",
@@ -21,8 +22,10 @@ const SITE_CONFIG = {
       imagePosition: "center",
       imageFit: "contain",
       bio: "Ratna leads the vision and strategy for MET Club. With a passion for interdisciplinary engineering, he focuses on building a community where theoretical math meets practical technology. He is currently focused on long-term club strategy, planning major events, and leading client meetings to secure future partnerships.",
-      linkedin: "https://www.linkedin.com/in/ratnakoushikappasani/",
-      github: "https://github.com/itsgnex"
+      linkedin: "https://www.linkedin.com/in/ratnakoushikappasani",
+      website: "https://ratnakoushikappasani.com/",
+      github: "https://github.com/itsgnex",
+      email: "ratnakoushik.appasan@mytwu.ca"
     },
     {
       name: "Tanya Aggarwal",
@@ -31,15 +34,18 @@ const SITE_CONFIG = {
       imageFit: "contain",
       bio: "Tanya oversees the club's operations and ensures that projects align with our core values. She's incredibly proud of the collaborative environment the team has fostered. Her current focus is on team expansion, leading the hiring process to bring in new, passionate candidates to join the MET community.",
       linkedin: "https://www.linkedin.com/in/aggtanya/",
-      github: "https://github.com/TanyaAggarwal08"
+      website: "https://aggarwaltanya.com",
+      github: "https://github.com/tanyaaggarwal08",
+      email: "Tanya.Aggarwal@mytwu.ca"
     },
     {
       name: "Shubham Verma",
       role: "Marketing Lead",
       image: "assets/images/shubham.jpeg?v=2",
       bio: "Shubham orchestrates our outreach and marketing efforts. His dedication ensures that every event reaches our audience and is an unforgettable experience for all members. He is actively designing our latest club promotion campaigns, creating engaging posters, and finding creative ways to expand our campus presence.",
-      linkedin: "https://www.linkedin.com/in/shubhverma-/",
-      github: "#"
+      linkedin: "http://linkedin.com/in/shubhverma-/",
+      github: "https://github.com/ShubhamVerma9090",
+      email: "Shubham.Verma@mytwu.ca"
     },
     {
       name: "Saketh Reddy Kanthala",
@@ -48,7 +54,8 @@ const SITE_CONFIG = {
       imageFit: "contain",
       bio: "Saketh manages the club's finances and resources. He specializes in bridging complex budgets with robust planning, constantly pushing the boundaries of what our club can achieve. His day-to-day involves meticulous financial planning, securing funding opportunities, and ensuring resources are efficiently allocated across all club projects.",
       linkedin: "https://www.linkedin.com/in/sakethkanthala/",
-      github: "https://github.com/Saketh567"
+      github: "https://github.com/Saketh567",
+      email: "SakethReddy.Kanthala@mytwu.ca"
     },
     {
       name: "Open Position",
