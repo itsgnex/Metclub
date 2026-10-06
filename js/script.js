@@ -3,6 +3,13 @@
    Clean, minimal - no gimmicks
    ============================================================ */
 
+(() => {
+  const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+  if (cleanPath !== window.location.pathname) {
+    window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', async () => {
   const heroVideo = document.querySelector('.hero-video-bg');
   if (heroVideo) {
