@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">MET Club Instagram profile logo</title>
+  <desc id="desc">Square MET Club profile logo for Instagram.</desc>
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="100%" stop-color="#f4ecdc"/>
+    </radialGradient>
+    <style>
+      .ink{fill:#071a33}
+      .blue{fill:#0d5fc4}
+      .line{stroke:#8fb1dc;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .fine{stroke:#8fb1dc;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.55}
+      .word{font-family:"Playfair Display","Didot","Bodoni 72",Georgia,serif;font-size:330px;font-weight:900;letter-spacing:.02em}
+      .sub{font-family:"Libre Baskerville",Georgia,serif;font-size:62px;font-weight:700;letter-spacing:.28em}
+      .tiny{font-family:"JetBrains Mono","Courier New",monospace;font-size:30px;font-weight:500;letter-spacing:.18em}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#paper)"/>
+  <circle cx="540" cy="540" r="384" class="fine"/>
+  <circle cx="540" cy="540" r="320" class="fine" opacity=".35"/>
+
+  <g transform="translate(0 118)">
+    <path class="fine" d="M540 0v46M458 32l32 32M622 32l-32 32"/>
+    <path class="line" d="M494 114c0-37 26-66 46-66s46 29 46 66c0 25-14 41-28 55-9 9-12 20-12 32h-12c0-12-3-23-12-32-14-14-28-30-28-55z"/>
+    <path class="line" d="M516 224h48M522 250h36"/>
+    <circle cx="540" cy="114" r="11" class="blue"/>
+  </g>
+
+  <g transform="translate(0 322)">
+    <text x="540" y="188" text-anchor="middle" class="word ink">MET</text>
+    <text x="540" y="298" text-anchor="middle" class="sub ink">CLUB</text>
+    <path class="line" d="M318 354h444"/>
+    <text x="540" y="416" text-anchor="middle" class="tiny ink">MATH · ENGINEERING · TECH</text>
+  </g>
+</svg>

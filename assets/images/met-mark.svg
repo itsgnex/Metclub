@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">MET Club mark</title>
+  <desc id="desc">Compact MET Club mark with blueprint geometry.</desc>
+  <defs>
+    <style>
+      .ink{fill:#071a33}
+      .blue{fill:#0d5fc4}
+      .line{stroke:#8fb1dc;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .word{font-family:"Playfair Display","Didot","Bodoni 72",Georgia,serif;font-size:150px;font-weight:900;letter-spacing:.02em}
+    </style>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#fbf8ef"/>
+  <path class="line" d="M76 104h118M76 408h118M318 104h118M318 408h118M104 76v118M408 76v118M104 318v118M408 318v118"/>
+  <circle cx="256" cy="256" r="174" class="line" opacity=".45"/>
+  <path class="line" d="M130 332c34-76 88-76 122 0s88 76 122 0" opacity=".7"/>
+  <text x="256" y="282" text-anchor="middle" class="word ink">MET</text>
+  <circle cx="256" cy="350" r="10" class="blue"/>
+  <rect x="374" y="126" width="26" height="26" class="blue"/>
+</svg>

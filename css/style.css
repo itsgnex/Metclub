@@ -1280,3 +1280,31 @@ button, input, textarea, select { font-family: inherit; outline: none; border: n
 video { pointer-events: none; }
 video::-webkit-media-controls { display: none !important; }
 video::-webkit-media-controls-start-playback-button { display: none !important; -webkit-appearance: none; }
+
+.event-video {
+  width: 100%;
+  margin-top: 1.75rem;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+
+.event-video::-webkit-media-controls { display: flex !important; }
+
+.event-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.event-media-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .event-detail-card { padding: 1.5rem !important; }
+  .event-media-grid { grid-template-columns: 1fr; }
+}

@@ -425,6 +425,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             <p style="color: var(--green); font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: 0.5rem;">${ev.date} | ${ev.meta}</p>
             <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--black); font-family: var(--font-serif); font-weight: normal;">${ev.title}</h2>
             <p style="color: var(--text-muted); line-height: 1.8;">${ev.details || "No additional details available at this time."}</p>
+            ${ev.video ? `<video class="event-video" controls preload="metadata"><source src="${ev.video}" type="video/mp4">Your browser does not support this video.</video>` : ''}
+            ${ev.images?.length ? `<div class="event-media-grid">${ev.images.map((image) => `<img src="${image.src}" alt="${image.alt}" loading="lazy">`).join('')}</div>` : ''}
           </div>`).join('');
       }
     }

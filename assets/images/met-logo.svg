@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">MET Club logo</title>
+  <desc id="desc">MET Club wordmark for Mathematics, Engineering, and Technology at Trinity Western University.</desc>
+  <defs>
+    <style>
+      .ink{fill:#071a33}
+      .blue{fill:#0d5fc4}
+      .line{stroke:#8fb1dc;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .fine{stroke:#8fb1dc;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.7}
+      .word{font-family:"Playfair Display","Didot","Bodoni 72",Georgia,serif;font-size:178px;font-weight:900;letter-spacing:.045em}
+      .sub{font-family:"Libre Baskerville",Georgia,serif;font-size:30px;font-weight:700;letter-spacing:.34em}
+      .micro{font-family:"JetBrains Mono","Courier New",monospace;font-size:17px;font-weight:500;letter-spacing:.18em}
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="36" fill="#fbf8ef"/>
+
+  <g transform="translate(64 46)">
+    <path class="fine" d="M0 28h138M0 126h74M34 0v66M34 94v70"/>
+    <path class="line" d="M890 66h86M1000 66h98M1046 16v98M992 162h120"/>
+    <circle cx="1046" cy="66" r="48" class="fine"/>
+    <path class="line" d="M1008 104l78-78"/>
+    <circle cx="1046" cy="66" r="7" class="blue"/>
+    <rect x="952" y="20" width="20" height="20" class="blue"/>
+  </g>
+
+  <g transform="translate(145 72)">
+    <text x="0" y="150" class="word ink">MET</text>
+    <text x="31" y="211" class="sub ink">MATHEMATICS</text>
+    <circle cx="424" cy="200" r="8" class="blue"/>
+    <text x="460" y="211" class="sub ink">ENGINEERING</text>
+    <circle cx="804" cy="200" r="8" class="blue"/>
+    <text x="840" y="211" class="sub ink">TECHNOLOGY</text>
+    <path class="line" d="M0 240h910"/>
+    <text x="0" y="283" class="micro ink">TWUSA CLUB · TRINITY WESTERN UNIVERSITY</text>
+  </g>
+
+  <g transform="translate(690 218)" opacity=".8">
+    <path class="fine" d="M0 74c40-88 108-88 148 0s108 88 148 0"/>
+    <path class="fine" d="M20 74h300M82 20v112M232 20v112"/>
+    <circle cx="74" cy="74" r="6" class="blue"/>
+    <circle cx="244" cy="74" r="6" class="blue"/>
+  </g>
+</svg>
